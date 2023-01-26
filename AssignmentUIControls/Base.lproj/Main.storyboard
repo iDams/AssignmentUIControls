@@ -80,7 +80,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Add"/>
                                 <connections>
-                                    <action selector="Add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kB9-2h-tIl"/>
+                                    <action selector="Add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hmj-9g-p56"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDv-Ab-7hT">
@@ -90,7 +90,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Submit"/>
                                 <connections>
                                     <action selector="Add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j8Y-FP-qlR"/>
-                                    <action selector="Submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8UZ-0u-66V"/>
+                                    <action selector="Submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJd-mz-zSK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bF7-te-0Zo">
@@ -99,7 +99,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Clear"/>
                                 <connections>
-                                    <action selector="Clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BxT-PT-TOx"/>
+                                    <action selector="Clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J1X-vd-UF7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -107,8 +107,13 @@
                         <color key="backgroundColor" red="0.70329680985103726" green="0.74353738177478257" blue="0.80987197160720825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
+                        <outlet property="Age" destination="H0M-6T-zBj" id="mpa-S9-GoZ"/>
+                        <outlet property="Country" destination="0aS-7a-ssV" id="udx-GH-l49"/>
+                        <outlet property="FristName" destination="Znx-ee-YyJ" id="DeJ-Ij-1wd"/>
+                        <outlet property="LastName" destination="KAf-b6-JPF" id="sCC-Uh-5mP"/>
                         <outlet property="MissingInfoLabel" destination="Yt1-Um-dcD" id="CPW-k2-yKp"/>
                         <outlet property="SuccessfullyLabel" destination="sNL-E4-TCR" id="ulI-aD-ZTf"/>
+                        <outlet property="TextField" destination="3wH-hN-hpt" id="TzG-vG-WuQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

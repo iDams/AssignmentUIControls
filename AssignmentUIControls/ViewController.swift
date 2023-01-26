@@ -9,30 +9,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    //Labels
+    @IBOutlet weak var MissingInfoLabel: UILabel!
+    @IBOutlet weak var SuccessfullyLabel: UILabel!
+    
+    //TextField
+    @IBOutlet weak var FristName: UITextField!
+    
+    @IBOutlet weak var LastName: UITextField!
+    
+    @IBOutlet weak var Country: UITextField!
+    
+    @IBOutlet weak var Age: UITextField!
+    
+    @IBOutlet weak var TextField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    //Labels
-    @IBOutlet weak var MissingInfoLabel: UILabel!
-    @IBOutlet weak var SuccessfullyLabel: UILabel!
-    //TextField
-    @IBAction func FristName(_ sender: Any) {
-    }
-    @IBAction func LastName(_ sender: Any) {
-    }
-    @IBAction func Country(_ sender: Any) {
-    }
-    @IBAction func Age(_ sender: Any) {
-    }
     
     //Button
-    @IBAction func Add(_ sender: Any) {
+    @IBAction func Add(_ sender: UIButton) {
     }
-    @IBAction func Submit(_ sender: Any) {
+
+    @IBAction func Submit(_ sender: UIButton) {
     }
-    @IBAction func Clear(_ sender: Any) {
+    
+    @IBAction func Clear(_ sender: UIButton) {
     }
 }
 
