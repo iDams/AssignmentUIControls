@@ -14,6 +14,25 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    //Labels
+    @IBOutlet weak var MissingInfoLabel: UILabel!
+    @IBOutlet weak var SuccessfullyLabel: UILabel!
+    //TextField
+    @IBAction func FristName(_ sender: Any) {
+    }
+    @IBAction func LastName(_ sender: Any) {
+    }
+    @IBAction func Country(_ sender: Any) {
+    }
+    @IBAction func Age(_ sender: Any) {
+    }
+    
+    //Button
+    @IBAction func Add(_ sender: Any) {
+    }
+    @IBAction func Submit(_ sender: Any) {
+    }
+    @IBAction func Clear(_ sender: Any) {
+    }
 }
 
