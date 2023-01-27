@@ -45,24 +45,32 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     //Button
-
+    
+    
+    //Button Add
     @IBAction func Add(_ sender: UIButton) {
         
+        // variables to use in textefieldView
         let name = fristName.text ?? "";
         let lastName = lastName.text ?? "";
         let country = country.text ?? "";
         let age = age.text ?? "";
     
+        // set text Name,LastName,Country,Age
         textField.text="Full Name : "+name.capitalized+" "+lastName.capitalized+"\nCountry : "+country.capitalized+"\nAge : "+age;
     }
 
     @IBAction func Submit(_ sender: UIButton) {
+        
+        // If all text field is void show missingInfo and clear textField
         if(fristName.text=="" && lastName.text=="" && country.text=="" && age.text=="" ){
+            
             missingInfoLabel.isHidden=false;
             successfullyLabel.isHidden=true;
             textField.text="";
         }
         
+        // If any text field is void show missingInfo else show message successfully
         if(fristName.text==""||lastName.text==""||country.text==""||age.text=="" ){
             missingInfoLabel.isHidden=false;
             successfullyLabel.isHidden=true;
@@ -72,6 +80,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    
+    // Button reset all text field and label message
     @IBAction func Clear(_ sender: UIButton) {
         successfullyLabel.isHidden=true;
         missingInfoLabel.isHidden=true;
@@ -83,7 +93,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
 
-    // func set only number in textfield
+    // func set only number in textfield for Age
   func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let allowedCharacters = CharacterSet.decimalDigits
         let characterSet = CharacterSet(charactersIn: string)
