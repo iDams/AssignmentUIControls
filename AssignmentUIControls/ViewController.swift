@@ -23,14 +23,22 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     
     override func viewDidLoad() {
-
-        missingInfoLabel.isHidden=true;
         super.viewDidLoad()
-        successfullyLabel.text="Successfully submitted!";
-        missingInfoLabel.text="Complete the missing Info!";
+        // Hiden Label
+        missingInfoLabel.isHidden=true;
         successfullyLabel.isHidden=true;
         
-
+        // Message label
+        successfullyLabel.text="Successfully submitted!";
+        missingInfoLabel.text="Complete the missing Info!";
+        
+        textField.isEditable=false
+ 
+        // only numberPad
+        age.keyboardType = .numberPad;
+        // call self for func set only number
+        age.delegate = self
+        
 
     }
     
@@ -68,6 +76,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
 
-
+    // func set only number in textfield
+  func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let allowedCharacters = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        return allowedCharacters.isSuperset(of: characterSet)
+    }
+    
 }
 
