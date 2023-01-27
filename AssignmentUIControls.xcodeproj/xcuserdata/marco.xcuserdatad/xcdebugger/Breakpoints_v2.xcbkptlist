@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "507906AB-FE23-41E5-BA55-F3A1F04DFA9B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4108F66-AD14-4714-951F-6A89C4F273A5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentUIControls/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "B4108F66-AD14-4714-951F-6A89C4F273A5 - 69212372cca7ed67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentUIControls.ViewController.successfullyLabel.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "AssignmentUIControls"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marco/Documents/Conestoga/course/week%203/lab3/AssignmentUIControls/AssignmentUIControls/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "B4108F66-AD14-4714-951F-6A89C4F273A5 - 1b5671b5e48db16b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentUIControls.ViewController.successfullyLabel.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "AssignmentUIControls"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marco/Documents/Conestoga/course/week%203/lab3/AssignmentUIControls/AssignmentUIControls/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "B4108F66-AD14-4714-951F-6A89C4F273A5 - f36fbaa874e1b65a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentUIControls.ViewController.successfullyLabel.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "AssignmentUIControls"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marco/Documents/Conestoga/course/week%203/lab3/AssignmentUIControls/AssignmentUIControls/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "B4108F66-AD14-4714-951F-6A89C4F273A5 - 7e72d860e784903e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentUIControls.ViewController.successfullyLabel.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "AssignmentUIControls"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marco/Documents/Conestoga/course/week%203/lab3/AssignmentUIControls/AssignmentUIControls/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "B4108F66-AD14-4714-951F-6A89C4F273A5 - 8c8d00416210cd71"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentUIControls.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; AssignmentUIControls.ViewController"
+                  moduleName = "AssignmentUIControls"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marco/Documents/Conestoga/course/week%203/lab3/AssignmentUIControls/AssignmentUIControls/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "B4108F66-AD14-4714-951F-6A89C4F273A5 - a86b33e4d019b733"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentUIControls.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;AssignmentUIControls.ViewController&gt;"
+                  moduleName = "AssignmentUIControls"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/marco/Documents/Conestoga/course/week%203/lab3/AssignmentUIControls/AssignmentUIControls/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
