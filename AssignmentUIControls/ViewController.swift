@@ -53,14 +53,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let country = country.text ?? "";
         let age = age.text ?? "";
     
-        textField.text="Full Name:"+name.capitalized+" "+lastName.capitalized+"\nCountry:"+country.capitalized+"\nAge:"+age;
+        textField.text="Full Name : "+name.capitalized+" "+lastName.capitalized+"\nCountry : "+country.capitalized+"\nAge : "+age;
     }
 
     @IBAction func Submit(_ sender: UIButton) {
+        if(fristName.text=="" && lastName.text=="" && country.text=="" && age.text=="" ){
+            missingInfoLabel.isHidden=false;
+            successfullyLabel.isHidden=true;
+            textField.text="";
+        }
         
         if(fristName.text==""||lastName.text==""||country.text==""||age.text=="" ){
             missingInfoLabel.isHidden=false;
+            successfullyLabel.isHidden=true;
         }else{
+            missingInfoLabel.isHidden=true;
             successfullyLabel.isHidden=false;
         }
     }
