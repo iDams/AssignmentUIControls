@@ -35,36 +35,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="FristName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="HdH-67-ZxH"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LastName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KAf-b6-JPF">
                                 <rect key="frame" x="159" y="178" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="LastName:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="qVx-28-UFZ"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0aS-7a-ssV">
                                 <rect key="frame" x="159" y="232" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="Country:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="0Yv-CX-mxb"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H0M-6T-zBj">
                                 <rect key="frame" x="159" y="286" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="Age:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="zey-tQ-e4Q"/>
-                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3wH-hN-hpt">
                                 <rect key="frame" x="87" y="360" width="240" height="128"/>
@@ -102,18 +90,26 @@
                                     <action selector="Clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J1X-vd-UF7"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="LastName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yjb-oU-LHm">
+                                <rect key="frame" x="160" y="178" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY" colorLabel="IBBuiltInLabel-Blue"/>
                         <color key="backgroundColor" red="0.70329680985103726" green="0.74353738177478257" blue="0.80987197160720825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
-                        <outlet property="Age" destination="H0M-6T-zBj" id="mpa-S9-GoZ"/>
-                        <outlet property="Country" destination="0aS-7a-ssV" id="udx-GH-l49"/>
-                        <outlet property="FristName" destination="Znx-ee-YyJ" id="DeJ-Ij-1wd"/>
-                        <outlet property="LastName" destination="KAf-b6-JPF" id="sCC-Uh-5mP"/>
                         <outlet property="MissingInfoLabel" destination="Yt1-Um-dcD" id="CPW-k2-yKp"/>
                         <outlet property="SuccessfullyLabel" destination="sNL-E4-TCR" id="ulI-aD-ZTf"/>
-                        <outlet property="TextField" destination="3wH-hN-hpt" id="TzG-vG-WuQ"/>
+                        <outlet property="age" destination="H0M-6T-zBj" id="8zP-Ae-4yC"/>
+                        <outlet property="country" destination="0aS-7a-ssV" id="LEi-4o-8ma"/>
+                        <outlet property="fristName" destination="Znx-ee-YyJ" id="reR-yJ-jhP"/>
+                        <outlet property="lastName" destination="yjb-oU-LHm" id="TWb-ii-JoR"/>
+                        <outlet property="missingInfoLabel" destination="Yt1-Um-dcD" id="ugu-rm-VQ3"/>
+                        <outlet property="successfullyLabel" destination="sNL-E4-TCR" id="M8A-ZO-TKU"/>
+                        <outlet property="textField" destination="3wH-hN-hpt" id="btR-CZ-6Lh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -7,36 +7,67 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     //Labels
-    @IBOutlet weak var MissingInfoLabel: UILabel!
-    @IBOutlet weak var SuccessfullyLabel: UILabel!
+    @IBOutlet weak var successfullyLabel: UILabel!
+    @IBOutlet weak var missingInfoLabel: UILabel!
     
     //TextField
-    @IBOutlet weak var FristName: UITextField!
+    @IBOutlet weak var fristName: UITextField!
+    @IBOutlet weak var lastName: UITextField!
+    @IBOutlet weak var country: UITextField!
+    @IBOutlet weak var age: UITextField!
+    @IBOutlet weak var textField: UITextView!
     
-    @IBOutlet weak var LastName: UITextField!
     
-    @IBOutlet weak var Country: UITextField!
-    
-    @IBOutlet weak var Age: UITextField!
-    
-    @IBOutlet weak var TextField: UITextView!
     
     override func viewDidLoad() {
+
+        missingInfoLabel.isHidden=true;
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        successfullyLabel.text="Successfully submitted!";
+        missingInfoLabel.text="Complete the missing Info!";
+        successfullyLabel.isHidden=true;
+        
+
+
     }
     
+    
+    
     //Button
+
     @IBAction func Add(_ sender: UIButton) {
+        
+        let name = fristName.text ?? "";
+        let lastName = lastName.text ?? "";
+        let country = country.text ?? "";
+        let age = age.text ?? "";
+    
+        textField.text="Full Name:"+name.capitalized+" "+lastName.capitalized+"\nCountry:"+country.capitalized+"\nAge:"+age;
     }
 
     @IBAction func Submit(_ sender: UIButton) {
+        
+        if(fristName.text==""||lastName.text==""||country.text==""||age.text=="" ){
+            missingInfoLabel.isHidden=false;
+        }else{
+            successfullyLabel.isHidden=false;
+        }
     }
     
     @IBAction func Clear(_ sender: UIButton) {
+        successfullyLabel.isHidden=true;
+        missingInfoLabel.isHidden=true;
+        fristName.text="";
+        lastName.text="";
+        country.text="";
+        age.text="";
+        textField.text="";
     }
+    
+
+
 }
 
